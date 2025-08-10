@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital@0;1&family=Manrope:wght@200..800&family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(72, 119, 189);
+    color: #333;
+    font-family: 'Libertinus Sans', sans-serif;
+}

@@ -1,0 +1,125 @@
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 15);
+}
+
+.container .form-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container .form {
+    margin-top: 25px;
+    padding: 8px;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 8px;
+    width: 100%;
+}
+
+.form .input-container {
+    padding: 8px;
+    width: 100%;
+}
+
+.form .input {
+    /* position: relative; */
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid rgb(110, 90, 90);
+}
+
+.form .input-label {
+    padding: 20px 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form .gender-container {
+    padding: 12px;
+}
+
+.gender-container h3 {
+    color: rgb(100, 82, 82);
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.form .gender-options {
+    display: flex;
+    column-gap: 50px;
+    accent-color: green;
+}
+
+.gender input, .gender label {
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.form .form-button {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid rgb(110, 90, 90);
+    margin-top: 10px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.form-button[type=reset] {
+    background-color: rgb(249, 3, 3);
+    color: white;
+}
+
+.form-button[type=submit] {
+    background-color: rgb(5, 171, 33);
+    color: white;
+}
+
+/* Hover Effects */
+.input:focus, .input:valid {
+    border: 1px solid rgb(5, 171, 33);
+}
+
+.input:focus + .input-label {
+    height: 30px;
+    transform: translate(-15px, -15px) scale(0.88);
+    z-index: -1;
+}
+
+.form-button:hover {
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+/* Responsive */
+@media  screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .form .gender-options{
+        flex-wrap: wrap;
+    }
+}
